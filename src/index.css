@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Merriweather:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 215 45% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 45% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 45% 20%;
+
+    /* Dark navy blue from logo text */
+    --primary: 213 55% 27%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Green from logo figures */
+    --secondary: 100 48% 42%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 100 48% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 213 55% 27%;
+
+    --radius: 0.5rem;
+
+    /* Custom tokens */
+    --hero-overlay: 213 55% 27%;
+    --section-alt: 210 25% 97%;
+    --cta-gradient-from: 100 48% 42%;
+    --cta-gradient-to: 100 48% 35%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 213 55% 27%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 210 20% 96%;
+    --sidebar-accent-foreground: 213 55% 27%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 213 55% 27%;
+  }
+
+  .dark {
+    --background: 215 45% 8%;
+    --foreground: 210 20% 96%;
+    --card: 215 40% 12%;
+    --card-foreground: 210 20% 96%;
+    --popover: 215 40% 12%;
+    --popover-foreground: 210 20% 96%;
+    --primary: 100 48% 50%;
+    --primary-foreground: 215 45% 8%;
+    --secondary: 213 55% 40%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 215 30% 18%;
+    --muted-foreground: 215 15% 65%;
+    --accent: 100 48% 50%;
+    --accent-foreground: 215 45% 8%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 215 30% 22%;
+    --input: 215 30% 22%;
+    --ring: 100 48% 50%;
+    --sidebar-background: 215 40% 10%;
+    --sidebar-foreground: 210 20% 96%;
+    --sidebar-primary: 100 48% 50%;
+    --sidebar-primary-foreground: 215 45% 8%;
+    --sidebar-accent: 215 30% 18%;
+    --sidebar-accent-foreground: 210 20% 96%;
+    --sidebar-border: 215 30% 22%;
+    --sidebar-ring: 100 48% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Lato', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+  }
+}
