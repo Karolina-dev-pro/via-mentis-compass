@@ -19,15 +19,30 @@ export default function AdminLayout() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-      if (!session) navigate("/admin/login");
+    let subscription: { unsubscribe: () => void } | undefined;
+    try {
+      const res = supabase.auth.onAuthStateChange((_event, session) => {
+        if (!session) navigate("/admin/login");
+        setLoading(false);
+      });
+      subscription = res.data.subscription;
+    } catch (err) {
+      console.error("Auth state subscribe failed:", err);
       setLoading(false);
-    });
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      if (!session) navigate("/admin/login");
-      setLoading(false);
-    });
-    return () => subscription.unsubscribe();
+      navigate("/admin/login");
+    }
+    (async () => {
+      try {
+        const { data: { session } } = await supabase.auth.getSession();
+        if (!session) navigate("/admin/login");
+      } catch (err) {
+        console.error("getSession failed:", err);
+        navigate("/admin/login");
+      } finally {
+        setLoading(false);
+      }
+    })();
+    return () => subscription?.unsubscribe();
   }, [navigate]);
 
   const handleLogout = async () => {
