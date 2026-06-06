@@ -1,33 +1,58 @@
-import { Link } from "react-router-dom";
-import { Newspaper, FileText, Image, Mail } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { useQuery } from "@tanstack/react-query";
+import { supabase } from "@/integrations/supabase/client";
+import { Newspaper, Users, FileText, MessageSquare } from "lucide-react";
 
-const cards = [
-  { title: "Aktualności", desc: "Zarządzaj wpisami i publikuj na stronie", icon: Newspaper, path: "/admin/news" },
-  { title: "Strony", desc: "Edytuj treść stron statycznych", icon: FileText, path: "/admin/pages" },
-  { title: "Media", desc: "Biblioteka zdjęć i plików", icon: Image, path: "/admin/media" },
-  { title: "Wiadomości", desc: "Wiadomości z formularza kontaktowego", icon: Mail, path: "/admin/contacts" },
-];
+export default function AdminDashboard() {
+  const { data: newsCount } = useQuery({
+    queryKey: ["admin-news-count"],
+    queryFn: async () => {
+      const { count } = await supabase.from("news").select("*", { count: "exact", head: true });
+      return count ?? 0;
+    },
+  });
+  const { data: teamCount } = useQuery({
+    queryKey: ["admin-team-count"],
+    queryFn: async () => {
+      const { count } = await supabase.from("team_members").select("*", { count: "exact", head: true });
+      return count ?? 0;
+    },
+  });
+  const { data: docsCount } = useQuery({
+    queryKey: ["admin-docs-count"],
+    queryFn: async () => {
+      const { count } = await supabase.from("documents").select("*", { count: "exact", head: true });
+      return count ?? 0;
+    },
+  });
+  const { data: msgCount } = useQuery({
+    queryKey: ["admin-msg-count"],
+    queryFn: async () => {
+      const { count } = await supabase.from("contact_submissions").select("*", { count: "exact", head: true });
+      return count ?? 0;
+    },
+  });
 
-const AdminDashboard = () => {
+  const stats = [
+    { label: "Aktualności", count: newsCount, icon: Newspaper },
+    { label: "Członkowie zespołu", count: teamCount, icon: Users },
+    { label: "Dokumenty", count: docsCount, icon: FileText },
+    { label: "Wiadomości", count: msgCount, icon: MessageSquare },
+  ];
+
   return (
     <div>
-      <h2 className="text-2xl font-bold text-foreground mb-6">Panel zarządzania</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {cards.map((c) => (
-          <Link key={c.path} to={c.path}>
-            <Card className="hover:shadow-md transition-shadow h-full">
-              <CardContent className="p-6 flex flex-col items-center text-center gap-3">
-                <c.icon className="h-10 w-10 text-primary" />
-                <h3 className="font-bold text-foreground">{c.title}</h3>
-                <p className="text-sm text-muted-foreground">{c.desc}</p>
-              </CardContent>
-            </Card>
-          </Link>
+      <h1 className="text-2xl font-bold mb-6">Dashboard</h1>
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {stats.map((s) => (
+          <div key={s.label} className="bg-background rounded-xl border p-5">
+            <div className="flex items-center gap-3 mb-2">
+              <s.icon className="h-5 w-5 text-accent" />
+              <span className="text-sm text-muted-foreground">{s.label}</span>
+            </div>
+            <p className="text-3xl font-bold">{s.count ?? "-"}</p>
+          </div>
         ))}
       </div>
     </div>
   );
-};
-
-export default AdminDashboard;
+}

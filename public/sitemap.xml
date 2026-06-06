@@ -2,63 +2,92 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.rakpluca.org.pl/</loc>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.rakpluca.org.pl/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.rakpluca.org.pl/"/>
+    <loc>https://viamentis.pl/</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://viamentis.pl/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://viamentis.pl/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://viamentis.pl/?lang=ua" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://viamentis.pl/" />
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.rakpluca.org.pl/o-nas</loc>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.rakpluca.org.pl/o-nas"/>
+    <loc>https://viamentis.pl/o-fundacji</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://viamentis.pl/o-fundacji" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://viamentis.pl/o-fundacji?lang=en" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://viamentis.pl/o-fundacji?lang=ua" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://viamentis.pl/o-fundacji" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.rakpluca.org.pl/1-procent</loc>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.rakpluca.org.pl/1-procent"/>
-    <changefreq>yearly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.rakpluca.org.pl/rak-pluca</loc>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.rakpluca.org.pl/rak-pluca"/>
+    <loc>https://viamentis.pl/oferta</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://viamentis.pl/oferta" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://viamentis.pl/oferta?lang=en" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://viamentis.pl/oferta?lang=ua" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://viamentis.pl/oferta" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.rakpluca.org.pl/profilaktyka</loc>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.rakpluca.org.pl/profilaktyka"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.rakpluca.org.pl/aktualnosci</loc>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.rakpluca.org.pl/aktualnosci"/>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.rakpluca.org.pl/galeria</loc>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.rakpluca.org.pl/galeria"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.rakpluca.org.pl/kontakt</loc>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.rakpluca.org.pl/kontakt"/>
+    <loc>https://viamentis.pl/zespol</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://viamentis.pl/zespol" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://viamentis.pl/zespol?lang=en" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://viamentis.pl/zespol?lang=ua" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://viamentis.pl/zespol" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.rakpluca.org.pl/polityka-prywatnosci</loc>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.rakpluca.org.pl/polityka-prywatnosci"/>
+    <loc>https://viamentis.pl/aktualnosci</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://viamentis.pl/aktualnosci" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://viamentis.pl/aktualnosci?lang=en" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://viamentis.pl/aktualnosci?lang=ua" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://viamentis.pl/aktualnosci" />
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://viamentis.pl/galeria</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://viamentis.pl/galeria" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://viamentis.pl/galeria?lang=en" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://viamentis.pl/galeria?lang=ua" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://viamentis.pl/galeria" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://viamentis.pl/kontakt</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://viamentis.pl/kontakt" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://viamentis.pl/kontakt?lang=en" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://viamentis.pl/kontakt?lang=ua" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://viamentis.pl/kontakt" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://viamentis.pl/dokumenty</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://viamentis.pl/dokumenty" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://viamentis.pl/dokumenty?lang=en" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://viamentis.pl/dokumenty?lang=ua" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://viamentis.pl/dokumenty" />
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://viamentis.pl/polityka-prywatnosci</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://viamentis.pl/polityka-prywatnosci" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://viamentis.pl/polityka-prywatnosci?lang=en" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://viamentis.pl/polityka-prywatnosci?lang=ua" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://viamentis.pl/polityka-prywatnosci" />
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://www.rakpluca.org.pl/regulamin</loc>
-    <xhtml:link rel="alternate" hreflang="pl" href="https://www.rakpluca.org.pl/regulamin"/>
+    <loc>https://viamentis.pl/regulamin</loc>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://viamentis.pl/regulamin" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://viamentis.pl/regulamin?lang=en" />
+    <xhtml:link rel="alternate" hreflang="uk" href="https://viamentis.pl/regulamin?lang=ua" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://viamentis.pl/regulamin" />
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

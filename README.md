@@ -1,8 +1,8 @@
 # Fundacja Via Mentis
 
-Strona internetowa Fundacji Via Mentis
+Strona internetowa Fundacji Via Mentis (viamentis.pl).
 
-## Stack techniczny
+## Stack
 
 - Vite + React + TypeScript
 - Tailwind CSS + shadcn/ui
@@ -28,7 +28,3 @@ npm run build
 ```sh
 npm test
 ```
-
-## Kontakt
-
-Projekt i wykonanie: Karolina Jędrzejewska | [stronypro.com](https://stronypro.com) (wolontariat)
